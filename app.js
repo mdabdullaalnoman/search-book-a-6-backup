@@ -10,7 +10,7 @@ document.getElementById('search-btn').addEventListener('click', function () {
     const section = document.getElementById('search-result');
     section.innerHTML = '';
 
-    fetch(`http://openlibrary.org/search.json?q=${searchValue}`)
+    fetch(`https://openlibrary.org/search.json?q=${searchValue}`)
         .then(res => res.json())
         .then(data => displayResult(data))
 
