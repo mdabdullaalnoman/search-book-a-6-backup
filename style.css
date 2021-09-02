@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #082032;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 5%;
+}
+.search-warp {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+.search-warp input{
+    width: 80%;
+    height: 50px;
+    border: none;
+    border-radius: 25px 0 0 25px;
+    outline: none;
+    font-size: 25px;
+    padding-left: 20px;
+}
+.search-warp input::placeholder{
+    font-size: 18px;
+    color: gray;
+    padding-left: 10px;
+}
+.search-warp button{
+   border: none;
+   padding: 15px 30px;
+   border-radius: 0 25px  25px 0;
+   font-size: 20px;
+   font-weight: bold;
+   background-image: linear-gradient(to right, #1CD8D2 0%, #93EDC7  51%, #1CD8D2  100%);
+}
+.search-warp button:hover{
+    background-image: linear-gradient(to right, #1CD8D2 0%,   #1CD8D2 51%, #93EDC7 100%);
+}
+
+/* counter */
+h1{
+    text-align: center;
+    color: white;
+}
+
+/* search results */
+#search-result{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-gap: 10px;
+}
+#search-result .books-info{
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 10px;
+}
+#search-result .books-info img{
+   height: 200px;
+}
+.title{
+    color: tomato;
+}
+
+/* Loading spinner */
+#loading {
+    text-align: center;
+    display: none;
+}
+#loading img{
+    height: 250px;
+}
+
+@media (max-width:600px){
+    body{
+        padding: 3%;
+    }
+    #search-result{
+        grid-template-columns: 1fr;
+    }
+}

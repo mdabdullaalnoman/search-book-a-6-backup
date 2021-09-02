@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search book</title>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="search-warp">
+        <input id="search-fild" placeholder="search book by name...." type="text">
+        <button id="search-btn">search</button>
+    </div>
+
+    <!-- search result count -->
+    <h1>Result : <span id="search-count">0</span></h1>
+
+    <!-- Loading section -->
+    <div id="loading">
+        <img src="man.gif" alt="loading.....">
+    </div>
+
+    <!-- search results -->
+    <section id="search-result"></section>
+
+
+    <!-- custom js -->
+    <script src="app.js"></script>
+</body>
+
+</html>
